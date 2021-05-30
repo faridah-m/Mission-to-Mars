@@ -53,10 +53,10 @@
           <h2 class="text-center">Mars Hemispheres</h2>
         </div>
 
-        {% for hemisphere in mars.hemispheres %}
+        {% for hemisphere in mars.mars_hemispheres %}
         <div class=" col-md-3">
-          <div class="img-responsive img-thumbnail">
-            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
+          <div class="">
+          <div class="img-responsive img-thumbnail" src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
             <div class="caption" style="text-align: center;">
               <h3>{{hemisphere.title}}</h3>
             </div>
